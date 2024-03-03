@@ -27,7 +27,7 @@
     <nav class="navbar navbar-expand-lg navbar-light" style="background: #2980b9;">
         <div class="container-fluid">
             <a class="navbar-brand" href="./home.html">
-                <img src="Images\Logo\ApniDukan.png" alt="logo" width="45" height="35" class="d-inline-block align-text-top mr-2 navbar-logo">
+                <img src="Images\Logo\images(sm).png" alt="logo" width="45" height="35" class="d-inline-block align-text-top mr-2 navbar-logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -56,15 +56,52 @@
 <section class="deals">
     <div class="inner">
         <div>
-            <a href="ceiling_fan.html">
+          <a href="ceiling_fan.html">
                 <img src="https://img.freepik.com/free-vector/refreshing-from-summer-heat-concept-illustration_114360-5805.jpg?size=626&ext=jpg&ga=GA1.1.1757518714.1699874645&semt=ais">
                 <h3 class="mobile-name">CEILING FAN REPAIR</h3>
                 <p>Brands: Balaji, Usha, Havells, All</p>
                 <p class="mobile-inner">Price: Rs.300</p>
                 <button class="buybutton mobile-inner">Buy</button>
-            </a>
+            
+              </a>
         </div>
 
+        <div>
+            <a href="ac_service.html">
+                <img src="https://img.freepik.com/free-vector/air-conditioning-repair-mounting-service-repairman-installing-examining-repairing-conditioner-with-special-tools-equipment-isolated-vector-illustration_613284-50.jpg?size=626&ext=jpg&ga=GA1.1.1757518714.1699874645&semt=ais">
+                <h3 class="mobile-name">AC SERVICE</h3>
+                <p>AC repair & Service, Installation, Cleaning</p>
+                <p class="mobile-inner">Price: Rs.1299</p>
+                <button class="buybutton mobile-inner">Buy</button>
+            </a>
+        </div>
+        <div>
+            <a href="ac_service.html">
+                <img src="https://img.freepik.com/free-vector/air-conditioning-repair-mounting-service-repairman-installing-examining-repairing-conditioner-with-special-tools-equipment-isolated-vector-illustration_613284-50.jpg?size=626&ext=jpg&ga=GA1.1.1757518714.1699874645&semt=ais">
+                <h3 class="mobile-name">AC SERVICE</h3>
+                <p>AC repair & Service, Installation, Cleaning</p>
+                <p class="mobile-inner">Price: Rs.1299</p>
+                <button class="buybutton mobile-inner">Buy</button>
+            </a>
+        </div>
+        <div>
+            <a href="ac_service.html">
+                <img src="https://img.freepik.com/free-vector/air-conditioning-repair-mounting-service-repairman-installing-examining-repairing-conditioner-with-special-tools-equipment-isolated-vector-illustration_613284-50.jpg?size=626&ext=jpg&ga=GA1.1.1757518714.1699874645&semt=ais">
+                <h3 class="mobile-name">AC SERVICE</h3>
+                <p>AC repair & Service, Installation, Cleaning</p>
+                <p class="mobile-inner">Price: Rs.1299</p>
+                <button class="buybutton mobile-inner">Buy</button>
+            </a>
+        </div>
+        <div>
+            <a href="ac_service.html">
+                <img src="https://img.freepik.com/free-vector/air-conditioning-repair-mounting-service-repairman-installing-examining-repairing-conditioner-with-special-tools-equipment-isolated-vector-illustration_613284-50.jpg?size=626&ext=jpg&ga=GA1.1.1757518714.1699874645&semt=ais">
+                <h3 class="mobile-name">AC SERVICE</h3>
+                <p>AC repair & Service, Installation, Cleaning</p>
+                <p class="mobile-inner">Price: Rs.1299</p>
+                <button class="buybutton mobile-inner">Buy</button>
+            </a>
+        </div>
         <div>
             <a href="ac_service.html">
                 <img src="https://img.freepik.com/free-vector/air-conditioning-repair-mounting-service-repairman-installing-examining-repairing-conditioner-with-special-tools-equipment-isolated-vector-illustration_613284-50.jpg?size=626&ext=jpg&ga=GA1.1.1757518714.1699874645&semt=ais">
@@ -90,12 +127,6 @@
     <i class="material-icons">arrow_upward</i>
 </button>
 
-<script>
-    const btnScrollToTop = document.querySelector("#btnScrollToTop");
-    btnScrollToTop.addEventListener("click", function () {
-        window.scrollTo(0, 0);
-    });
-</script>
 <footer class="bg-dark text-white pt-5 pb-4" style="font-size: 18px;">
     <div class="container text-md-left">
       <div class="row text-md-left">
@@ -168,5 +199,40 @@
       </div>
     </div>
   </footer>
+  <style>
+    .buybutton {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+  </style>
+  
+<script>
+  const btnScrollToTop = document.querySelector("#btnScrollToTop");
+  btnScrollToTop.addEventListener("click", function () {
+      window.scrollTo(0, 0);
+  });
+  function addToCart() {
+      const imageUrl = document.querySelector("img").src;
+      const serviceName = document.querySelector("h2").textContent;
+      const price = document.querySelector("p:nth-of-type(2)").textContent.split(":")[1].trim();
+      const item = {
+          imageUrl: imageUrl,
+          serviceName: serviceName,
+          price: price
+      };
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart.push(item);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      alert("Item added to cart!");
+      //document.getElementById("proceedToCart").style.display = "inline-block";
+  }
+
+  function goToCart() {
+      window.location.href = "cart.html";
+  }
+</script>
 </body>
 </html>
