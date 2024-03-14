@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SKYMART</title>
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./static/style.css">
+    <link rel="icon" href="./Images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/60fedd8558.js" crossorigin="anonymous"></script>
+    
+    <script src="https://kit.fontawesome.com/60fedd8558.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+    <title>SKYMART</title>
+    <link rel="stylesheet" href="./static/home.css">
+</head>
+
+<body>
+<section>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background: #2980b9;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./home.html">
+                <img src="Images\Logo\images(sm).png" alt="logo" width="45" height="35" class="d-inline-block align-text-top mr-2 navbar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-capitalize">
+                    <ul class="navbar-nav mr-auto mb-2 mb-lg-0 text-capitalize">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
+                        </li>
+                        <li class="nav-item text-capitalize">
+                            <a class="nav-link" href="cart.html">My Cart</a>
+                        </li>
+                        <li class="nav-item text-capitalize">
+                            <a class="nav-link" href="orders.html">Your order</a>
+                        </li>
+                        <li class="nav-item text-capitalize">
+                          <a class="nav-link" href="./contactus.html">Contact us</a>
+                      </li>
+                    </ul>
+                    
+            </div>
+        </div>
+    </nav>
+</section>
+<section class="deals">
+    <div class="inner">
+        <div>
+                <a href="ceiling_fan.html">
+                <img src="https://www.jiomart.com/images/product/original/491187273/good-life-chilka-urad-dal-500-g-product-images-o491187273-p491187273-0-202306151357.jpg?im=Resize=(360,360)">
+                <h3 class="mobile-name">GOOD LIFE</h3>
+                <p>Good Life Chilka Urad Dal 500g</p>
+                <p class="mobile-inner">Price: Rs.78</p>
+                <button class="buybutton" onclick="addToCart()">Buy</button>
+                <button id="proceedToCart" style="display: none;" onclick="goToCart()">Proceed to Cart</button>
+              </a>
+            
+          
+        </div>
+
+        <div>
+            <a href="ac_service.html">
+                <img src="https://www.jiomart.com/images/product/original/491187271/good-life-dal-mix-500-g-product-images-o491187271-p491187271-0-202307031306.jpg?im=Resize=(360,360)">
+                <h3 class="mobile-name">GOOD LIFE</h3>
+                <p>Good Life Dal Mix 500g</p>
+                <p class="mobile-inner">Price: Rs.76.00</p>
+                <button class="buybutton mobile-inner">Buy</button>
+            </a>
+        </div>
+        <div>
+            <a href="ac_service.html">
+                <img src="https://www.jiomart.com/images/product/original/490830937/tata-sampann-unpolished-gota-urad-1-kg-product-images-o490830937-p490830937-0-202206291548.jpg?im=Resize=(360,360)">
+                <h3 class="mobile-name">TATA SAMPANN</h3>
+                <p>Tata Sampann Unpolished Urad 1Kg</p>
+                <p class="mobile-inner">Price: Rs.217.00</p>
+                <button class="buybutton mobile-inner">Buy</button>
+            </a>
+        </div>
+        <div>
+            <a href="ac_service.html">
+                <img src="https://d1sl07a7h3d3fr.cloudfront.net/common/master/opt_mysore_dall_rose_1kg.jpg">
+                <h3 class="mobile-name">MASSOR DAL</h3>
+                <p>Masoor Dal 1Kg</p>
+                <p class="mobile-inner">Price: Rs.94</p>
+                <button class="buybutton mobile-inner">Buy</button>
+            </a>
+        </div>
+        <div>
+            <a href="ac_service.html">
+                <img src="https://d1sl07a7h3d3fr.cloudfront.net/admin/product/opt_7e051af3-02e0-4c54-9e5e-6753b43bd9d8-ullunthu_white_round_1kg.jpg">
+                <h3 class="mobile-name">URAD DAL</h3>
+                <p>Urad Dal 1Kg</p>
+                <p class="mobile-inner">Price: Rs.156</p>
+                <button class="buybutton mobile-inner">Buy</button>
+            </a>
+        </div>
+        <div>
+            <a href="ac_service.html">
+                <img src="https://www.bigbasket.com/media/uploads/p/m/40000290_9-tata-sampann-unpolished-chana-dal.jpg?tr=w-750,q=80">
+                <h3 class="mobile-name">TATA SAMPANN</h3>
+                <p>Unpolished Chana Dal 1Kg</p>
+                <p class="mobile-inner">Price: Rs.129.00</p>
+                <button class="buybutton mobile-inner">Buy</button>
+            </a>
+        </div>
+        <div>
+            <a href="ac_service.html">
+                <img src="https://www.jiomart.com/images/product/original/490922059/24-mantra-organic-brown-chana-500-g-product-images-o490922059-p490922059-0-202308020428.jpg?im=Resize=(360,360)">
+                <h3 class="mobile-name">ORGANIC</h3>
+                <p>24 Mantra Organic Brown Chana 500g</p>
+                <p class="mobile-inner">Price: Rs.93.00</p>
+                <button class="buybutton mobile-inner">Buy</button>
+            </a>
+        </div>
+        <div>
+            <a href="ac_service.html">
+                <img src="https://www.jiomart.com/images/product/original/490922060/24-mantra-organic-kabuli-chana-500-g-product-images-o490922060-p490922060-0-202308230947.jpg?im=Resize=(360,360)">
+                <h3 class="mobile-name">ORGANIC</h3>
+                <p>24 Mantra Organic Kabuli Chana 500g </p>
+                <p class="mobile-inner">Price: Rs.181.00</p>
+                <button class="buybutton mobile-inner">Buy</button>
+            </a>
+        </div>
+        <div>
+            <a href="ac_service.html">
+                <img src="https://www.jiomart.com/images/product/original/490922067/24-mantra-organic-tur-arhar-dal-500-g-product-images-o490922067-p490922067-0-202308011709.jpg?im=Resize=(360,360)">
+                <h3 class="mobile-name">ORGANIC</h3>
+                <p>24 Mantra Organic Tur 500g</p>
+                <p class="mobile-inner">Price: Rs.153.00</p>
+                <button class="buybutton mobile-inner">Buy</button>
+            </a>
+        </div>
+        <div>
+            <a href="ac_service.html">
+                <img src="https://www.jiomart.com/images/product/original/490922063/24-mantra-organic-green-whole-moong-500-g-product-images-o490922063-p490922063-0-202205172236.jpg?im=Resize=(360,360)">
+                <h3 class="mobile-name">ORGANIC</h3>
+                <p>24 Mantra Organic Green Moong 500g </p>
+                <p class="mobile-inner">Price: Rs.134.00</p>
+                <button class="buybutton mobile-inner">Buy</button>
+            </a>
+        </div>
+        <div>
+            <a href="ac_service.html">
+                <img src="https://www.jiomart.com/images/product/original/rvnrgdps3c/sri-sri-tattva-toor-dal-split-pigeon-pea-1kg-incomplete-product-images-orvnrgdps3c-p604010741-0-202308220901.jpg?im=Resize=(360,360)">
+                <h3 class="mobile-name">SRI SRI TATTVA</h3>
+                <p>Sri Sri Tattva Pigeon Pea 1 Kg</p>
+                <p class="mobile-inner">Price: Rs.207.00</p>
+                <button class="buybutton mobile-inner">Buy</button>
+            </a>
+        </div>
+        <div>
+            <a href="ac_service.html">
+                <img src="https://www.jiomart.com/images/product/original/rvqioobsqp/trinetra-best-quality-moong-dal-500gm-pack-of-1-green-moong-dal-500-g-product-images-orvqioobsqp-p591450967-0-202205191032.jpg?im=Resize=(360,360)">
+                <h3 class="mobile-name">TRINETRA</h3>
+                <p>Trinetra Green Moong Dal 500g</p>
+                <p class="mobile-inner">Price: Rs.190.00</p>
+                <button class="buybutton mobile-inner">Buy</button>
+            </a>
+        </div>
+        <div>
+            <a href="ac_service.html">
+                <img src="https://www.jiomart.com/images/product/original/rvulemnze1/trinetra-best-quality-kala-chana-500gm-pack-of-1-black-gram-500-g-product-images-orvulemnze1-p591454071-0-202205191217.jpg?im=Resize=(360,360)">
+                <h3 class="mobile-name">TRINETRA</h3>
+                <p>Trinetra Black Gram 500g </p>
+                <p class="mobile-inner">Price: Rs.165.00</p>
+                <button class="buybutton mobile-inner">Buy</button>
+            </a>
+        </div>
+        <div>
+            <a href="ac_service.html">
+                <img src="https://www.jiomart.com/images/product/original/rvoqwyyiiz/trinetra-best-quality-rajma-chitra-500gm-pack-of-1-kidney-bean-500-g-product-images-orvoqwyyiiz-p591463747-0-202205191748.jpg?im=Resize=(360,360)">
+                <h3 class="mobile-name">TRINETRA</h3>
+                <p>Trinetra Chitra Rajma 500g</p>
+                <p class="mobile-inner">Price: Rs.210.00</p>
+                <button class="buybutton mobile-inner">Buy</button>
+            </a>
+        </div>
+        <div>
+            <a href="ac_service.html">
+                <img src="https://www.jiomart.com/images/product/original/rvljfs8yjl/trinetra-best-quality-sabut-urad-dal-500gm-pack-of-1-urad-gota-500-g-product-images-orvljfs8yjl-p591458425-0-202205191422.jpg?im=Resize=(360,360)">
+                <h3 class="mobile-name">TRINETRA</h3>
+                <p>Trinetra Sabut Urad Dal 500g</p>
+                <p class="mobile-inner">Price: Rs.200.00</p>
+                <button class="buybutton mobile-inner">Buy</button>
+            </a>
+        </div>
+
+        <!-- Add other service blocks similarly -->
+
+    </div>
+</section>
+<footer class="bg-dark text-white pt-5 pb-4">
+    <!-- Your existing code for the footer -->
+</footer>
+
+<script src="./static/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- Scroll to top button -->
+<button id="btnScrollToTop">
+    <i class="material-icons">arrow_upward</i>
+</button>
+
+<footer class="bg-dark text-white pt-5 pb-4" style="font-size: 18px;">
+    <div class="container text-md-left">
+      <div class="row text-md-left">
+        <div class="col mt-3" style="color:#808080;">
+          <h5 class="text-uppercase mb-4 font-weight-bold md-sz">Get to know us</h5>
+          <p>
+            <a href="./home.html" class="text-white" style="text-decoration: none;">HOME</a>
+          </p>
+          <p>
+            <a href="./about.html" class="text-white" style="text-decoration: none;">About us</a>
+          </p>
+          <p>
+              <a href="./contactus.html" class="text-white" style="text-decoration: none;">Contact us</a>
+            </p>
+
+        </div>
+        <div class="col mt-3"  style="color:#808080;">
+          <h5 class="text-uppercase mb-4 font-weight-bold md-sz">Let us help you</h5>
+          <p>
+            <a href="./payment.html" class="text-white" style="text-decoration: none;">Payments</a>
+          </p>
+            <p>
+              <a href="./paypolicy.html" class="text-white" style="text-decoration: none;">Payment Policy</a>
+            </p>
+            
+            <p>
+              <a href="canellation.html" class="text-white" style="text-decoration: none;">Cancellation and Returns</a>
+            </p>
+            
+            
+        </div>
+        <div class="col mt-3" style="color:#808080;">
+          <h5 class="text-uppercase mb-4 font-weight-bold md-sz">Policy</h5>
+           
+           
+            <p>
+              <a href="./privacy.html" class="text-white" style="text-decoration: none;">Privacy</a>
+            </p>
+        </div>
+        
+        <div class="col mt-3" style="color:#808080;">
+          <div>
+            <h5 class="text-uppercase mb-4 font-weight-bold md-sz">Connect with us</h5>
+            <p>
+              <a href="https://www.facebook.com" class="text-white" style="text-decoration: none;">
+                <i class="fab fa-facebook-square"></i>
+                Facebook
+              </a>
+            </p>
+            <p>
+              <a href="https://twitter.com" class="text-white" style="text-decoration: none;">
+                <i class="fab fa-twitter-square"></i>
+                Twitter
+              </a>
+            </p>
+            <p>
+              <a href="https://instagram.com" class="text-white" style="text-decoration: none;">
+                <i class="fab fa-instagram-square"></i>
+                Instagram
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="mb-4">
+      <div class="row align-items-center">
+        <div class="text-center">
+          Content owned and updated by <span class="heart">&#10084;
+        </div>
+      </div>
+    </div>
+  </footer>
+  <style>
+    .buybutton {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+  </style>
+  
+<script>
+  const btnScrollToTop = document.querySelector("#btnScrollToTop");
+  btnScrollToTop.addEventListener("click", function () {
+      window.scrollTo(0, 0);
+  });
+  function addToCart() {
+      const imageUrl = document.querySelector("img").src;
+      const serviceName = document.querySelector("h2").textContent;
+      const price = document.querySelector("p:nth-of-type(2)").textContent.split(":")[1].trim();
+      const item = {
+          imageUrl: imageUrl,
+          serviceName: serviceName,
+          price: price
+      };
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart.push(item);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      alert("Item added to cart!");
+      document.getElementById("proceedToCart").style.display = "inline-block";
+  }
+
+  function goToCart() {
+      window.location.href = "cart.html";
+  }
+</script>
+</body>
+</html>
